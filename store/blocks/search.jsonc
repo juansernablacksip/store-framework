@@ -19,6 +19,7 @@
 
  "search-result-layout.desktop": {
    "children": [
+    "flex-layout.row#breadcrumb.search",
     "flex-layout.row#search-title.v2",
     "flex-layout.row#total-products.v2",
     "flex-layout.row#order-by.v2",
@@ -37,6 +38,9 @@
   },
 
 
+  "flex-layout.row#breadcrumb.search": {
+    "children": ["breadcrumb.search"]
+  },
   "flex-layout.row#search-title.v2": {
     "children": ["search-title.v2"]
   },
