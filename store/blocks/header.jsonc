@@ -35,8 +35,13 @@
         ]
     },
     "header-row#main": {
-        "children": [],
-        "props": {}
+        "children": [
+          "logo",
+          "header-row#search",
+          "header-spacer",
+          "minicart",
+          "login"
+        ]
     },
     "header-row#main-mobile": {
         "children": [
@@ -45,7 +50,6 @@
           "minicart",
           "login"
         ],
-      
         "props": {
           "sticky": true,
           "inverted":true
