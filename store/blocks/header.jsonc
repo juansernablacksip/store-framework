@@ -1,10 +1,4 @@
 {
-    "header": {
-      "blocks": [
-        "header-layout.desktop",
-        "header-layout.mobile"
-      ]
-    },
     "header.full": {
       "blocks": [
         "header-layout.desktop",
@@ -37,8 +31,8 @@
     "header-row#main": {
         "children": [
           "logo",
-          "header-row#search",
           "header-spacer",
+          "header-row#search",
           "minicart",
           "login"
         ]
