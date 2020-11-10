@@ -35,16 +35,8 @@
         ]
     },
     "header-row#main": {
-        "children": [
-          "logo",
-          "header-spacer",
-          "minicart",
-          "login"
-        ],
-        "props": {
-          "sticky": true,
-          "inverted":true
-        }
+        "children": [],
+        "props": {}
     },
     "header-row#main-mobile": {
         "children": [
