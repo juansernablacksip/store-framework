@@ -15,8 +15,7 @@
     "header-layout.desktop": {
       "children": [
         "header-row#notification",
-        "header-row#main-mobile",
-        "header-row#search"
+        "header-row#main"
       ]
     },
   
@@ -34,6 +33,19 @@
           "rich-text#header",
           "header-spacer"
         ]
+    },
+    "header-row#main": {
+        "children": [
+          "logo",
+          "header-spacer",
+          "minicart",
+          "login"
+        ],
+      
+        "props": {
+          "sticky": true,
+          "inverted":true
+        }
     },
     "header-row#main-mobile": {
         "children": [
