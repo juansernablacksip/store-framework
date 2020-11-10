@@ -296,7 +296,7 @@
     96
   ],
   "heights": [
-    1,
+    2.5,
     2,
     4,
     8,
@@ -368,7 +368,7 @@
       "body": {
         "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
         "fontWeight": "normal",
-        "fontSize": "2,5 rem",
+        "fontSize": "2.5 rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
@@ -389,7 +389,7 @@
       "action": {
         "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
         "fontWeight": "500",
-        "fontSize": "2,5 rem",
+        "fontSize": "2.5 rem",
         "textTransform": "uppercase",
         "letterSpacing": "0"
       },
@@ -410,7 +410,7 @@
       "code": {
         "fontFamily": "Consolas, monaco, monospace",
         "fontWeight": "normal",
-        "fontSize": "2,5 rem",
+        "fontSize": "2.5 rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       }
