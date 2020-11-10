@@ -1,5 +1,100 @@
 {
   "store.search": {
-    "blocks": []
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": [
+       "search-result-layout.desktop",
+       "search-result-layout.mobile",
+       "search-not-found-layout"
+    ]
+ },
+
+ "search-result-layout.desktop": {
+   "children": [
+    "flex-layout.row#search-title.v2",
+    "flex-layout.row#total-products.v2",
+    "flex-layout.row#order-by.v2",
+    "flex-layout.row#search-fetch-previous",
+    "flex-layout.row#search-content",
+    "flex-layout.row#filter-navigator.v3",
+    "flex-layout.row#search-fetch-more"
+   ],
+   "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile": {
+  },
+  "search-not-found-layout": {
+  },
+
+
+  "flex-layout.row#search-title.v2": {
+    "children": ["search-title.v2"]
+  },
+  "flex-layout.row#total-products.v2": {
+    "children": ["total-products.v2"]
+  },
+  "flex-layout.row#order-by.v2": {
+    "children": ["order-by.v2"]
+  },
+  "flex-layout.row#search-fetch-previous": {
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#search-content": {
+    "children": ["search-content"]
+  },
+  "flex-layout.row#filter-navigator.v3": {
+    "children": ["filter-navigator.v3"]
+  },
+  "flex-layout.row#search-fetch-more": {
+    "children": ["search-fetch-more"]
+  },
+
+
+  "store.search#category": {
+    "blocks": ["search-result-layout"],
+    "props": {
+        "context": {
+            "skusFilter": "FIRST_AVAILABLE",
+            "simulationBehavior": "skip"
+        }
+     }
+  },
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+        "context": {
+            "skusFilter": "FIRST_AVAILABLE",
+            "simulationBehavior": "skip"
+        }
+     }
+  },
+  "store.search#department": {
+    "blocks": ["search-result-layout"],
+    "props": {
+        "context": {
+            "skusFilter": "FIRST_AVAILABLE",
+            "simulationBehavior": "skip"
+        }
+     }
+  },
+  "store.search#subcategory": {
+    "blocks": ["search-result-layout"],
+    "props": {
+        "context": {
+            "skusFilter": "FIRST_AVAILABLE",
+            "simulationBehavior": "skip"
+        }
+     }
   }
+
 }
