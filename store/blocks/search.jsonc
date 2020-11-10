@@ -19,17 +19,16 @@
 
  "search-result-layout.desktop": {
    "children": [
-    "flex-layout.row#breadcrumb.search",
-    "flex-layout.row#search-title.v2",
-    "flex-layout.row#total-products.v2",
-    "flex-layout.row#order-by.v2",
-    "flex-layout.row#search-fetch-previous",
-    "flex-layout.row#search-content",
-    "flex-layout.row#filter-navigator.v3",
-    "flex-layout.row#search-fetch-more"
+    "breadcrumb.search",
+    "search-title.v2",
+    "flex-layout.row#top",
+    "search-fetch-previous",
+    "flex-layout.row#results",
+    "search-fetch-more"
    ],
    "props": {
-      "preventRouteChange": true
+      "preventRouteChange": true,
+      "pagination": "show-more"
     }
   },
   "search-result-layout.mobile": {
@@ -37,30 +36,36 @@
   "search-not-found-layout": {
   },
 
-
-  "flex-layout.row#breadcrumb.search": {
-    "children": ["breadcrumb.search"]
+  "flex-layout.row#top": { 
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
   },
-  "flex-layout.row#search-title.v2": {
-    "children": ["search-title.v2"]
+  "flex-layout.row#results": { 
+    "children": [ 
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
   },
-  "flex-layout.row#total-products.v2": {
-    "children": ["total-products.v2"]
+  "flex-layout.col#filter": { 
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
   },
-  "flex-layout.row#order-by.v2": {
-    "children": ["order-by.v2"]
+  "flex-layout.col#search": { 
+    "children": [
+      "search-content"
+    ]
   },
-  "flex-layout.row#search-fetch-previous": {
-    "children": ["search-fetch-previous"]
+  "search-content": { 
+    "blocks": ["gallery", "not-found"]
   },
-  "flex-layout.row#search-content": {
-    "children": ["search-content"]
-  },
-  "flex-layout.row#filter-navigator.v3": {
-    "children": ["filter-navigator.v3"]
-  },
-  "flex-layout.row#search-fetch-more": {
-    "children": ["search-fetch-more"]
+  "gallery": {
+    "blocks": ["product-summary.shelf"]
   }
 
 }
