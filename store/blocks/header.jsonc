@@ -41,7 +41,6 @@
           "minicart",
           "login"
         ],
-      
         "props": {
           "sticky": true,
           "inverted":true
