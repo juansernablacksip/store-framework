@@ -28,10 +28,11 @@
   "flex-layout.col#filter": { 
     "props": {
       "width": 20
-    }
+    },
+    "children": ["filter-navigator.v3"]
   },
   "flex-layout.col#search": { 
-    "children": ["search-content","filter-navigator.v3"]
+    "children": ["search-content"]
   },
   "search-content": { 
     "blocks": ["gallery", "not-found"]
