@@ -9,9 +9,11 @@
     "header-layout.desktop": {
       "children": [
         "header-row#notification",
-        "header-row#main"
+        "header-row#main",
+        "header-row#menu"
       ]
     },
+
     "header-row#main": {
         "children": [
           "logo",
