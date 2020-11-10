@@ -35,6 +35,7 @@
         "header-row#search"
       ]
     },
+
     "header-row#notification": {
         "children": [
           "header-spacer",
