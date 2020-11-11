@@ -1,8 +1,7 @@
 {
     "header-row#menu": {
         "children": [
-            "vtex.menu@2.x:menu#categories",
-            "header-spacer"
+            "vtex.menu@2.x:menu#categories"
         ]
     },
     
