@@ -30,10 +30,10 @@
     },
     "header-layout.mobile": {
       "children": [
+        "drawer",
         "header-row#notification",
         "header-row#main-mobile",
-        "header-row#search",
-        "drawer"
+        "header-row#search"
       ]
     },
 
