@@ -7,9 +7,11 @@
     
     "vtex.menu@2.x:menu#categories": {
         "children": [
+            "header-spacer",
             "menu-item#major-appliances",
             "menu-item#small-appliances",
-            "menu-item#electronics"
+            "menu-item#electronics",
+            "header-spacer"
         ],
         "props":{
             "orientation": "horizontal"
