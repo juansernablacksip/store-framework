@@ -1,17 +1,9 @@
 {
-    "header-row#menu": {
-        "children": [
-            "vtex.menu@2.x:menu#categories"
-        ]
-    },
-    
     "vtex.menu@2.x:menu#categories": {
         "children": [
-            "header-spacer",
             "menu-item#major-appliances",
             "menu-item#small-appliances",
-            "menu-item#electronics",
-            "header-spacer"
+            "menu-item#electronics"
         ],
         "props":{
             "orientation": "horizontal"
