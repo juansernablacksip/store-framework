@@ -30,19 +30,11 @@
     },
     "header-layout.mobile": {
       "children": [
-        "drawer",
         "header-row#notification",
         "header-row#main-mobile",
         "header-row#search"
       ]
     },
-
-    "drawer": {
-        "children": [
-            "header-row#menu"
-        ]
-      },
-
     "header-row#notification": {
         "children": [
           "header-spacer",
@@ -52,6 +44,7 @@
     },
     "header-row#main-mobile": {
         "children": [
+          "drawer",
           "logo",
           "header-spacer",
           "minicart",
@@ -61,6 +54,11 @@
           "sticky": true,
           "inverted":true
         }
+    },
+    "drawer": {
+        "children": [
+            "header-row#menu"
+        ]
     },      
     "header-row#search": {
         "children": [
