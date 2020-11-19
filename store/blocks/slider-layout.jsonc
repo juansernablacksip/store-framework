@@ -1,0 +1,30 @@
+{
+    "slider-layout#home": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "autoplay": {
+            "timeout": 7000,
+            "stopOnHover": true
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel"
+        },
+        "children": ["image#brand1", "image#brand2"]
+      },
+  
+    "image#brand1": {
+      "props": {
+        "src": "https://www.americanino.com/arquivos/20201022_bn_musica.jpg?v=637389823082500000"
+      }
+    },
+    "image#brand2": {
+        "props": {
+          "src": "https://www.americanino.com/arquivos/20201022_bn_musica.jpg?v=637389823082500000"
+        }
+      }
+  }

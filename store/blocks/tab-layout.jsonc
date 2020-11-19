@@ -1,0 +1,53 @@
+{
+ "tab-layout#home":{
+   "children": [
+     "tab-list#home",
+     "tab-content#home"
+   ],
+   "props": {
+     "blockClass": "home",
+     "defaultActiveTabId": "home1"
+  }
+ },
+"tab-list#home": {
+    "children": [
+        "tab-list.item#home1",
+        "tab-list.item#home2"
+    ]
+ },
+"tab-list.item#home1": {
+    "props": {
+        "tabId": "home1",
+        "label": "Longboards",
+        "defaultActiveTab": true
+    }
+ },
+"tab-list.item#home2": {
+    "props": {
+        "tabId": "home2",
+        "label": "Skateboards"
+    }
+ },
+  "tab-content#home": {
+       "children": [
+         "tab-content.item#home1",
+         "tab-content.item#home2"
+       ]
+     },
+     "tab-content.item#home1": {
+       "children": [
+         "shelf"
+       ],
+       "props": {
+         "tabId": "home1"
+       }
+     },
+     "tab-content.item#home2": {
+       "children": [
+         "slider-layout#home"
+       ],
+       "props": {
+         "tabId": "home2"
+       }
+     }
+}
